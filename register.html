@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CoinStocks - Register</title>
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial, sans-serif;
+}
+
+body{
+  background:#0f172a;
+  min-height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  padding:20px;
+}
+
+.container{
+  width:100%;
+  max-width:450px;
+  background:#111827;
+  padding:30px;
+  border-radius:12px;
+  box-shadow:0 10px 30px rgba(0,0,0,0.5);
+}
+
+h2{
+  text-align:center;
+  color:#38bdf8;
+  margin-bottom:25px;
+}
+
+.form-group{
+  margin-bottom:15px;
+}
+
+label{
+  display:block;
+  color:#fff;
+  margin-bottom:6px;
+  font-size:14px;
+}
+
+input{
+  width:100%;
+  padding:12px;
+  border:none;
+  outline:none;
+  border-radius:6px;
+  background:#1f2937;
+  color:#fff;
+  font-size:15px;
+}
+
+/* searchable country input */
+datalist{
+  background:#fff;
+}
+
+button{
+  width:100%;
+  padding:13px;
+  border:none;
+  border-radius:6px;
+  background:#38bdf8;
+  color:#000;
+  font-weight:bold;
+  cursor:pointer;
+  margin-top:10px;
+  font-size:16px;
+}
+
+button:hover{
+  background:#0ea5e9;
+}
+
+.bottom{
+  text-align:center;
+  margin-top:18px;
+  color:#ccc;
+  font-size:14px;
+}
+
+.bottom a{
+  color:#38bdf8;
+  text-decoration:none;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+<h2>Create Account</h2>
+
+<form>
+
+<div class="form-group">
+<label>Full Name</label>
+<input type="text" placeholder="Enter full name" required>
+</div>
+
+<div class="form-group">
+<label>Email</label>
+<input type="email" placeholder="Enter email" required>
+</div>
+
+<div class="form-group">
+<label>Phone Number</label>
+<input type="tel" placeholder="Enter phone number" required>
+</div>
+
+<div class="form-group">
+<label>Country</label>
+<input list="countries" name="country" placeholder="Search country" required>
+
+<datalist id="countries">
+<option>Afghanistan</option>
+<option>Albania</option>
+<option>Algeria</option>
+<option>Nigeria</option>
+<option>United States</option>
+<option>United Kingdom</option>
+<option>Canada</option>
+<option>Germany</option>
+<option>France</option>
+<option>India</option>
+<option>China</option>
+<option>South Africa</option>
+<option>Ghana</option>
+<option>Kenya</option>
+<option>Brazil</option>
+<option>Australia</option>
+<option>Italy</option>
+<option>Spain</option>
+<option>Mexico</option>
+<option>Egypt</option>
+<option>Saudi Arabia</option>
+<option>United Arab Emirates</option>
+<option>Russia</option>
+<option>Japan</option>
+<option>South Korea</option>
+</datalist>
+</div>
+
+<div class="form-group">
+<label>Password</label>
+<input type="password" placeholder="Enter password" required>
+</div>
+
+<button type="submit">Register</button>
+
+</form>
+
+<div class="bottom">
+Already have an account? <a href="login.html">Login</a>
+</div>
+
+</div>
+
+</body>
+</html>

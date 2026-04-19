@@ -1,0 +1,199 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #0b0d2e;
+    color: #fff;
+    line-height: 1.6;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    background: transparent;
+}
+
+.navbar nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #ccc;
+    font-weight: 400;
+}
+
+.logo {
+    font-weight: 700;
+    font-size: 22px;
+}
+
+.btn-primary {
+    background: linear-gradient(90deg, #4e73ff, #8e44ff);
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.btn-secondary {
+    background: #1c1f4a;
+    border: 1px solid #4e73ff;
+    padding: 10px 20px;
+    color: #fff;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.hero {
+    padding: 120px 10%;
+    text-align: center;
+    background: radial-gradient(circle at top right, #1f2a6c, #0b0d2e);
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    max-width: 600px;
+    margin: 0 auto 30px;
+    color: #bbb;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-around;
+    padding: 60px 10%;
+    text-align: center;
+}
+
+.stat-box h2 {
+    font-size: 32px;
+    color: #4e73ff;
+}
+
+.why, .invest, .grow {
+    padding: 80px 10%;
+    text-align: center;
+}
+
+.earn {
+    padding: 80px 10%;
+    text-align: center;
+}
+
+.earn-box {
+    margin-top: 30px;
+    background: #1c1f4a;
+    padding: 30px;
+    border-radius: 15px;
+    display: inline-block;
+}
+
+.coins {
+    padding: 80px 10%;
+    text-align: center;
+}
+
+.coin-grid {
+    display: flex;
+    gap: 30px;
+    margin-top: 40px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.coin-card {
+    background: #1c1f4a;
+    padding: 30px;
+    border-radius: 15px;
+    width: 280px;
+}
+
+.coin-card button {
+    margin-top: 15px;
+    padding: 8px 15px;
+    background: #4e73ff;
+    border: none;
+    color: white;
+    border-radius: 20px;
+}
+
+.detailed {
+    padding: 80px 10%;
+    text-align: center;
+    background: #11134a;
+}
+
+.newsletter {
+    padding: 60px 10%;
+    text-align: center;
+    background: linear-gradient(90deg, #4e73ff, #8e44ff);
+}
+
+.subscribe {
+    margin-top: 20px;
+}
+
+.subscribe input {
+    padding: 10px;
+    width: 250px;
+    border: none;
+    border-radius: 20px;
+    margin-right: 10px;
+}
+
+footer {
+    padding: 60px 10%;
+    background: #090b22;
+}
+
+.footer-grid {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-grid a {
+    display: block;
+    margin: 5px 0;
+    text-decoration: none;
+    color: #bbb;
+}
+
+/* RESPONSIVE DESIGN */
+
+@media(max-width: 992px){
+    .stats {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .navbar nav {
+        display: none;
+    }
+
+    .hero h1 {
+        font-size: 34px;
+    }
+}
+
+@media(max-width: 600px){
+    .hero {
+        padding: 80px 5%;
+    }
+
+    .coins, .why, .invest, .grow {
+        padding: 60px 5%;
+    }
+
+    .subscribe input {
+        width: 180px;
+    }
+}

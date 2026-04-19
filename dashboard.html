@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CoinStocks Dashboard</title>
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial, sans-serif;
+}
+
+body{
+  background:#0b1220;
+  color:#fff;
+}
+
+/* Layout */
+.container{
+  display:flex;
+  min-height:100vh;
+}
+
+/* Sidebar */
+.sidebar{
+  width:260px;
+  background:#111827;
+  padding:20px;
+}
+
+.sidebar h2{
+  color:#38bdf8;
+  margin-bottom:20px;
+}
+
+.nav a{
+  display:block;
+  color:#cbd5e1;
+  padding:12px;
+  margin-bottom:8px;
+  text-decoration:none;
+  border-radius:6px;
+}
+
+.nav a:hover{
+  background:#1f2937;
+}
+
+/* Main */
+.main{
+  flex:1;
+  padding:20px;
+}
+
+/* Topbar */
+.topbar{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  margin-bottom:20px;
+}
+
+.profile{
+  display:flex;
+  gap:10px;
+  align-items:center;
+}
+
+.avatar{
+  width:40px;
+  height:40px;
+  border-radius:50%;
+  background:#38bdf8;
+}
+
+/* Buttons */
+.btn{
+  padding:10px 14px;
+  border:none;
+  border-radius:6px;
+  cursor:pointer;
+  font-weight:bold;
+}
+
+.deposit{background:#22c55e;}
+.withdraw{background:#ef4444;}
+.trade{background:#38bdf8;}
+
+/* Cards */
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit, minmax(220px, 1fr));
+  gap:15px;
+  margin-bottom:20px;
+}
+
+.card{
+  background:#111827;
+  padding:15px;
+  border-radius:10px;
+}
+
+/* Sections */
+.section{
+  background:#111827;
+  padding:15px;
+  border-radius:10px;
+  margin-bottom:15px;
+}
+
+.chart{
+  height:200px;
+  background:#0f172a;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:#64748b;
+  border-radius:8px;
+}
+
+/* News */
+.news-item{
+  padding:10px;
+  border-bottom:1px solid #1f2937;
+  color:#cbd5e1;
+  font-size:14px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<!-- SIDEBAR -->
+<div class="sidebar">
+<h2>CoinStocks</h2>
+
+<div class="nav">
+<a href="#">Dashboard</a>
+<a href="#">Portfolio</a>
+<a href="#">Markets</a>
+<a href="#">Loans</a>
+<a href="#">Assets Recovery</a>
+<a href="#">Settings</a>
+</div>
+</div>
+
+<!-- MAIN -->
+<div class="main">
+
+<!-- TOPBAR -->
+<div class="topbar">
+<h3>Welcome Back 👋</h3>
+
+<div class="profile">
+<div class="avatar"></div>
+<span>My Account</span>
+</div>
+</div>
+
+<!-- ACTION BUTTONS -->
+<div style="margin-bottom:15px;">
+<button class="btn deposit">Deposit</button>
+<button class="btn withdraw">Withdraw</button>
+<button class="btn trade">Start New Trade</button>
+<button class="btn trade">Get Crypto Loan</button>
+<button class="btn withdraw">Assets Recovery</button>
+</div>
+
+<!-- MARKET CARDS -->
+<div class="grid">
+<div class="card">Bitcoin (BTC) <br><b>$67,200</b></div>
+<div class="card">Ethereum (ETH) <br><b>$3,500</b></div>
+<div class="card">BNB <br><b>$580</b></div>
+<div class="card">Solana <br><b>$145</b></div>
+</div>
+
+<!-- CHART -->
+<div class="section">
+<h3>Live Market Chart</h3>
+<div class="chart">
+Live Chart Area (Connect TradingView API later)
+</div>
+</div>
+
+<!-- PORTFOLIO -->
+<div class="section">
+<h3>Portfolio</h3>
+<p>Total Balance: $12,450</p>
+<p>Profit: +$1,250 (10.2%)</p>
+</div>
+
+<!-- NEWS -->
+<div class="section">
+<h3>Trending Crypto News</h3>
+
+<div class="news-item">Bitcoin hits new resistance level as market gains momentum</div>
+<div class="news-item">Ethereum upgrade expected to reduce gas fees significantly</div>
+<div class="news-item">Altcoins showing strong bullish signals this week</div>
+<div class="news-item">Global adoption of crypto payments increases</div>
+
+</div>
+
+<!-- SETTINGS -->
+<div class="section">
+<h3>Settings</h3>
+<p>Manage account, security, and preferences</p>
+</div>
+
+</div>
+
+</div>
+
+</body>
+</html>
